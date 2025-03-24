@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NJOKI JOSEPH WACHIRA | Professional Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 2.6;
+            margin: 0;
+            padding: 0;
+        }
+        /* Header with Watermark Background */
+        header {
+            background: url('C:/Users/TAIFA/WhatsApp Image 2025-02-28 at 3.33.01 AM.jpeg') no-repeat center;
+            background-size: contain;
+            background-position: center;
+            background-blend-mode: overlay;
+            opacity: 0.2; /* Makes it a faded watermark */
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        /* Overlay to ensure text is readable */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1;
+        }
+
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .skills, .education, .certifications, .experience {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .skills ul, .experience ul, .certifications ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li, .experience li, .certifications li {
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skills li:hover, .experience li:hover, .certifications li:hover {
+            background-color: #e0e0e0;
+        }
+
+        .skill-bar {
+            background-color: #ddd;
+            height: 10px;
+            border-radius: 5px;
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+
+        .skill-bar div {
+            height: 100%;
+            border-radius: 5px;
+        }
+	.skill-level-3 {
+            width: 90%;
+            background-color: #FF9800;
+        
+        }
+
+        .skill-level-2 {
+            width: 80%;
+            background-color: #2196F3;
+        }
+	.skill-level {
+            width: 70%;
+            background-color: #4CAF50;
+        
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .contact-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>Industrial Mathematics Graduate | Cyber Security Specialist | Web Designer | Data Entry Expert</p>
+    </header>
+
+    <div class="container">
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <span>Web Design (HTML, CSS)</span>
+                    <div class="skill-bar">
+                        <div class="skill-level"></div>
+                    </div>
+                </li>
+                <li>
+                    <span>Cyber Security</span>
+                    <div class="skill-bar">
+                        <div class="skill-level-2"></div>
+                    </div>
+                </li>
+                <li>
+                    <span>Data Entry (Excel)</span>
+                    <div class="skill-bar">
+                        <div class="skill-level-3"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Industrial Mathematics Graduate</li>
+            </ul>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Cyber Security Certificate</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <span>Freelance Web Designer</span>
+                    <span>January 2020 - Present</span>
+                </li>
+                <li>
+                    <span>Data Entry Specialist</span>
+                    <span>June 2019 - Present</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch with me for opportunities or collaborations, feel free to reach out!</p>
+            <button class="contact-button" onclick="window.location.href='mailto:your-email@example.com'">Contact Me</button>
+        </section>
+
+    </div>
+
+</body>
+<div class="footer">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </div>
+</html>
